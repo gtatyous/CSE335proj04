@@ -4,9 +4,10 @@
 #include <iostream>
 #include <vector>
 #include <string>
-#include "Visitor.h"
 
 using namespace std;
+class Visitor;
+
 
 class Node
 {
@@ -14,12 +15,18 @@ class Node
     string _name;
   public:
     Node(string n) : _name(n) {}
-    virtual ~Node(){};
+    virtual ~Node()=default;
   
     virtual void Accept(Visitor* v)=0;
     virtual void print_data() const=0;
     string get_name() const {return _name;}     
     void set_name(string s) {_name = s;}
+    
+    
 };
+
+#include "Employee.h"
+#include "Group.h"
+
 
 #endif

@@ -4,6 +4,7 @@
 
 #include "Node.h"
 #include "Visitor.h"
+
 #include <iostream>
 #include <vector>
 #include <string>
@@ -26,7 +27,9 @@ public:
   Node* get_child(int i) const {return _node_vector[i];}
   int get_children_size() const {return _node_vector.size();}
   
-  void AddChild(Node* c) {_node_vector.push_back(c);}    
+  void AddChild(Node* c) {_node_vector.push_back(c);}
+  //void AddChild(Group* c) {_node_vector.push_back(c);}
+    
   void RemoveChild(Node* c){_node_vector.erase ( (std::find(_node_vector.begin(),_node_vector.end(),c)) );}
   void ClearNodeVec() {_node_vector.clear();}
 };
