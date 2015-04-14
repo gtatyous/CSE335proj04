@@ -15,7 +15,7 @@ class Node
     string _name;
   public:
     Node(string n) : _name(n) {}
-    virtual ~Node()=default;
+    virtual ~Node(){};
   
     virtual void Accept(Visitor* v)=0;
     virtual void print_data() const=0;
