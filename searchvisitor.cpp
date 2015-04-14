@@ -1,5 +1,7 @@
 #include "Visitor.h"
 #include "Node.h"
+#include "Group.h"
+#include "Employee.h"
 #include "SearchVisitor.h"
 
 

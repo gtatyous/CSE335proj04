@@ -14,9 +14,9 @@ Group::~Group()
 
 Group::Group (const Group &g) : Node(g.get_name())
 {
- // _name = g->get_name();
- set_name(g.get_name());
-  for(int index=0;index<g.get_children_size();index++)
+
+  set_name(g.get_name());
+  for(int index=0; index<g.get_children_size();index++)
   {
     AddChild(g.get_child(index));
   }

@@ -1,5 +1,8 @@
-#include "Visitor.h"
 #include "Countvisitor.h"
+#include "Visitor.h"
+#include "Node.h"
+#include "Group.h"
+#include "Employee.h"
 
 CountVisitor::CountVisitor(const CountVisitor& rhs)
 {
